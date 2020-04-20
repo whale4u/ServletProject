@@ -59,7 +59,9 @@ public class LoginServlet extends HttpServlet {
             else { //密码正确
                 HttpSession httpSession = req.getSession();
                 httpSession.setAttribute("userName", name);
-                out.println("密码正确");
+//                out.println("密码正确！");
+
+                req.getRequestDispatcher("/home").include(req, resp);
             }
         }
 }
