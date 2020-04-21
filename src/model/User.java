@@ -1,8 +1,8 @@
 package model;
 
 public class User {
-    String name;
-    String password;
+    private String name;
+    private String password;
 
     public String getName() {
         return name;
